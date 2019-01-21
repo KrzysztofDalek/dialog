@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfStyle.Rodzaj"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfStyle"
+        mc:Ignorable="d"
+        Background="BurlyWood"
+        Title="Rodzaj" Height="450" Width="800">
+    <Grid Height="420" Margin="0,0,-0.4,0" VerticalAlignment="Bottom">
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="33" Margin="270,0,0,0" TextWrapping="Wrap" Text="Wybierz rodzaj pizzy" VerticalAlignment="Top" Width="308" FontSize="22" Background="BurlyWood"/>
+        <Image x:Name="image" Source="image/margarita.jpg" HorizontalAlignment="Left" Height="154" Margin="30,59,0,0" VerticalAlignment="Top" Width="286" MouseEnter="Mouse_Rusz" MouseLeave="Mouse_Uciekaj"/>
+        <Image x:Name="image1" Source="image/hawajska.jpg" HorizontalAlignment="Left" Height="142" Margin="499,64,0,0" VerticalAlignment="Top" Width="239"/>
+        <Image x:Name="image2" Source="image/capriciosa.jpg" HorizontalAlignment="Left" Height="159" Margin="499,233,0,0" VerticalAlignment="Top" Width="239"/>
+        <Image x:Name="image3" Source="image/english.jpg" HorizontalAlignment="Left" Height="144" Margin="46,233,0,0" VerticalAlignment="Top" Width="247"/>
+
+    </Grid>
+</Window>
