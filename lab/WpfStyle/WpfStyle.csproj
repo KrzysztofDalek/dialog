@@ -54,9 +54,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Ilosc.xaml.cs">
+      <DependentUpon>Ilosc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Rodzaj.xaml.cs">
       <DependentUpon>Rodzaj.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Wielkosc.xaml.cs">
+      <DependentUpon>Wielkosc.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Ilosc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,6 +80,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Rodzaj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wielkosc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -110,6 +124,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\capriciosa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\pizzerman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\l.png" />
+    <Resource Include="image\m.png" />
+    <Resource Include="image\s.png" />
+    <Resource Include="image\xl.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,35 +11,40 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfStyle
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy Ilosc.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Ilosc : Window
     {
-        public MainWindow()
+        public Ilosc()
         {
             InitializeComponent();
 
             DoubleAnimation animacjaLiczby = new DoubleAnimation();
-            animacjaLiczby.From = 180;
-            animacjaLiczby.To = 280;
-            animacjaLiczby.Duration = new Duration(TimeSpan.FromSeconds(2));
+            animacjaLiczby.From = 1.0;
+            animacjaLiczby.To = 0.0;
+            animacjaLiczby.Duration = new Duration(TimeSpan.FromSeconds(6));
             animacjaLiczby.RepeatBehavior = RepeatBehavior.Forever;
             animacjaLiczby.AutoReverse = true;
-            image.BeginAnimation(Label.HeightProperty, animacjaLiczby);
-
+            image.BeginAnimation(Label.OpacityProperty, animacjaLiczby);
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void slider2_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            Rodzaj rodzaj = new Rodzaj();
-            rodzaj.Show();
+            int val = Convert.ToInt32(e.NewValue);
+            string msg = String.Format("Ilość pizz: {0}", val);
+            this.textBlock1.Text = msg;
+        }
+
+        private void Click(object sender, RoutedEventArgs e)
+        {
+            Wielkosc wielkosc = new Wielkosc();
+            wielkosc.Show();
             this.Close();
 
         }

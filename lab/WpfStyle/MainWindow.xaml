@@ -9,8 +9,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Image x:Name="image" Source="image/pizza.jpg" HorizontalAlignment="Left" Height="322" Margin="29,68,0,0" VerticalAlignment="Top" Width="369"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="51" Margin="459,32,0,0" TextWrapping="Wrap" FontSize="32" Text="Polska Pizza"  VerticalAlignment="Top" Width="202" Background="BurlyWood"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="152" Margin="433,110,0,0" TextWrapping="Wrap" Text="Witaj na stronie głównej pizzeri Polska Pizza. Aby złożyć zamówienie kliknij przycisk poniżej 'Zamów'." FontSize="22" Background="BurlyWood" VerticalAlignment="Top" Width="291"/>
+        <TextBox IsReadOnly="True" x:Name="textBox1" HorizontalAlignment="Left" Height="152" Margin="433,110,0,0" TextWrapping="Wrap" Text="Witaj na stronie głównej pizzeri Polska Pizza. Aby złożyć zamówienie kliknij przycisk poniżej 'Zamów'." FontSize="22" Background="BurlyWood" VerticalAlignment="Top" Width="291"/>
+        <TextBlock  Margin="461,32,132.6,305" Height="51" FontSize="32" Text="Polska Pizza"/>
         <Button x:Name="button" Content="Zamów" HorizontalAlignment="Left" Margin="488,293,0,0" VerticalAlignment="Top" Width="107" Style="{DynamicResource ButtonStyle}" Height="65" Background="Salmon" FontSize="23" FontStyle="Italic" Click="Button_Click"/>
     </Grid>
 </Window>

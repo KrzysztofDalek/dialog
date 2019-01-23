@@ -9,31 +9,27 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfStyle
 {
     /// <summary>
-    /// Logika interakcji dla klasy Rodzaj.xaml
+    /// Logika interakcji dla klasy Wielkosc.xaml
     /// </summary>
-    public partial class Rodzaj : Window
+    public partial class Wielkosc : Window
     {
-        public Rodzaj()
+        public Wielkosc()
         {
             InitializeComponent();
-
         }
 
         private void Click(object sender, RoutedEventArgs e)
         {
-            Ilosc ilosc = new Ilosc();
-            ilosc.Show();
+            Wielkosc wielkosc = new Wielkosc();
+            wielkosc.Show();
             this.Close();
 
         }
-        
     }
 }
